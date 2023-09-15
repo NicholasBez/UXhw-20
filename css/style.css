@@ -1,0 +1,100 @@
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+
+ul {
+    color: #ff0000;
+}
+
+p {
+    font-size: 20px;
+}
+
+.logo {
+    background-color: darkblue;
+}
+
+
+.skills-heading {
+    text-align: center;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: center;
+    margin: 2rem;
+    border: 2px solid;
+    
+}
+
+.skill1, .skill2, .skill3 {
+    margin: 2rem;
+    border: 2px solid;
+}
+
+.skill1 img, .skill2 img, .skill3 img {
+    margin: 2rem;
+    max-width: 300px;
+    max-height: 100px;
+
+    
+}
+
+.myWork {
+    /* Add your styling for the section here */
+    padding: 2px;
+}
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Add your grid container styles here */
+}
+.gridItem {
+    /* Add your styling for grid items here */
+    max-width: 100px;
+    max-height: 50px;
+    padding: 2px;
+}
+.gridItemInfo {
+    /* Add your styling for grid item info here */
+    padding: 2px;
+}
+/* Styles for the footer */
+footer {
+    background-color: #373738;
+    padding: 20px; /* Adjust as needed */
+}
+/* Styles for the unordered list in the footer */
+footer ul {
+    display: inline-block;
+    
+}
+/* Styles for the list items in the footer */
+footer li {
+    padding: 5px; /* Adjust as needed */
+    color: #fff; /* Text color for the footer items */
+}
+@media screen and (max-width: 600px) {
+    /* Mobile Styles */
+    .workGrid {
+        display: grid;
+        grid-template-columns: 100%; /* Full-width columns for mobile */
+        grid-template-areas: /* Define mobile layout using grid-template-areas */
+            "item1"
+            "item2"
+            "item3"
+            "item4"
+            "item5"
+            "item6";
+    }
+    .gridItem {
+        width: 100%; /* Full-width grid items for mobile */
+    }
+    .gridItemInfo {
+        /* Mobile styles for grid item info */
+        margin: 0;
+    }
+}
